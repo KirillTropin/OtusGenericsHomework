@@ -3,7 +3,6 @@ package org.example;
 import org.example.boxes.AppleBox;
 import org.example.boxes.Box;
 import org.example.boxes.OrangeBox;
-import org.example.exceptions.FullBoxException;
 import org.example.fruits.Apple;
 import org.example.fruits.Fruit;
 import org.example.fruits.Orange;
@@ -12,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) throws FullBoxException {
+    public static void main(String[] args) {
         List<Apple> appleList = new ArrayList<>(200);
         List<Apple> apples = new ArrayList<>(200);
         List<Orange> orangeList = new ArrayList<>(400);
