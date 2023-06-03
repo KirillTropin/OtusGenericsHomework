@@ -20,6 +20,6 @@ public class Box <T extends Fruit>{
 
 
     public boolean eq(Box<? super Fruit> box) {
-        return ((this.weight() - box.weight())<0.001d)&&this.fruits.size()==box.fruits.size();
+        return (Math.abs(this.weight() - box.weight())<0.001d)&&this.fruits.size()==box.fruits.size();
     }
 }
